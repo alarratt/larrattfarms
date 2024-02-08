@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: black;
+    width:100%;
+    position:fixed;
+    top:0;
+    height:75px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    margin:1rem;
+}
+.navLeft{
+    display:flex;
+    color:black;
+    align-items:center;
+}
+.navRight>ul{
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.navLinkList{
+    list-style-type: none;
+}
+.navLink{
+    padding: 1rem;
+    color: white ;
+}
+.section1{
+    margin:1rem;
+}
+.content{
+    max-width: 800px;
+}
+.section1{
+    position:relative;
+}
