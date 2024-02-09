@@ -23,7 +23,7 @@ header{
     color:black;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2rem;
     align-items: center;
 }
 .navLinkList{
@@ -42,4 +42,5 @@ header{
 .section1{
     position:relative;
     margin-top: 75px;
+    max-width: 1000px;
 }
