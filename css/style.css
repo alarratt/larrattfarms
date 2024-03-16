@@ -1,11 +1,22 @@
+:root{
+    --priBgClr: black;
+    --secClr: #00FF00;
+    --priTxtClr: white;
+}
+*{
+    outline: 1px solid pink;
+}
 body{
+    display: flex;
     margin:0;
     padding:0;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
 }
 header{
-    background-color: black;
+    background-color: var(--priBgClr);
     width:100%;
-    position:fixed;
     top:0;
     height:75px;
 }
@@ -39,8 +50,9 @@ header{
 .content{
     max-width: 800px;
 }
-.section1{
-    position:relative;
-    margin-top: 75px;
+.hero{
     max-width: 1000px;
+    }
+.navCenter{
+    color: var(--priTxtClr);
 }
