@@ -13,6 +13,7 @@
     "@astrojs/preact": "^4.0.3",
     "@astrojs/rss": "^4.0.11",
     "astro": "^5.1.8",
+    "gray-matter": "^4.0.3",
     "preact": "^10.23.0"
   }
 }

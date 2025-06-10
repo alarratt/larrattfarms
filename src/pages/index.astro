@@ -1,10 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Greeting from "../components/Greeting";
+import BlogPost from '../components/BlogPost.astro';
+import { getRecentPosts } from '../utils/blog';
+
 const pageTitle = "Home Page"
+const recentPosts = await getRecentPosts(3);
 ---
 <BaseLayout pageTitle = {pageTitle}>
 	<h1>Root Systems</h1>
 	<h2>My home for tech and homestead experiences</h2> 
 	<p>Welcome! You have found my place for recording things I do/build/learn working a small homestead and building different projects that interest me!</p>
+	<h2>Recent Blog Posts</h2>
+	<ul>
+	  {recentPosts.map(post => (
+	    <BlogPost post={post} />
+	  ))}
+	</ul>
 </BaseLayout>
